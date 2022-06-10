@@ -8,8 +8,8 @@ import (
 
 	"github.com/tendermint/tendermint/types"
 
+	"github.com/consideritdone/landslide-tendermint/libs/log"
 	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
 
 	bam "github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/codec"

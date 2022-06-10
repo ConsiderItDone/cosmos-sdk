@@ -7,11 +7,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/consideritdone/landslide-tendermint/libs/log"
 	"github.com/gogo/gateway"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	"github.com/tendermint/tendermint/libs/log"
 	tmrpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
 
 	"github.com/cosmos/cosmos-sdk/client"

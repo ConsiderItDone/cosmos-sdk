@@ -1,7 +1,7 @@
 package testutil
 
 import (
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/consideritdone/landslide-tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 

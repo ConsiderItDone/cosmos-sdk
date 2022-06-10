@@ -5,10 +5,10 @@ import (
 	"os"
 	"testing"
 
+	"github.com/consideritdone/landslide-tendermint/libs/log"
 	"github.com/golang/mock/gomock"
 	"github.com/stretchr/testify/require"
 	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/log"
 	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 

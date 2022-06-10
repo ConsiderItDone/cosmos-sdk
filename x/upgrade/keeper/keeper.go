@@ -10,7 +10,7 @@ import (
 	"path/filepath"
 	"sort"
 
-	"github.com/tendermint/tendermint/libs/log"
+	"github.com/consideritdone/landslide-tendermint/libs/log"
 	tmos "github.com/tendermint/tendermint/libs/os"
 
 	"github.com/cosmos/cosmos-sdk/codec"
