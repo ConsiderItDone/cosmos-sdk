@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"strings"
 
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 	"github.com/spf13/cobra"
-	tmtypes "github.com/tendermint/tendermint/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

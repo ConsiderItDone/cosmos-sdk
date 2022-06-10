@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	tmcfg "github.com/consideritdone/landslide-tendermint/config"
+	"github.com/consideritdone/landslide-tendermint/libs/cli"
 	"github.com/consideritdone/landslide-tendermint/libs/log"
 	"github.com/spf13/viper"
-	tmcfg "github.com/tendermint/tendermint/config"
-	"github.com/tendermint/tendermint/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/codec"

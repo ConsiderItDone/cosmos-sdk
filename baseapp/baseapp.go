@@ -6,11 +6,11 @@ import (
 	"reflect"
 	"strings"
 
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
+	"github.com/consideritdone/landslide-tendermint/crypto/tmhash"
 	"github.com/consideritdone/landslide-tendermint/libs/log"
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
 	"github.com/gogo/protobuf/proto"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/codec/types"

@@ -16,7 +16,7 @@ order: 9
 Events are implemented in the Cosmos SDK as an alias of the ABCI `Event` type and
 take the form of: `{eventType}.{attributeKey}={attributeValue}`.
 
-+++ https://github.com/tendermint/tendermint/blob/v0.34.8/proto/tendermint/abci/types.proto#L304-L313
++++ https://github.com/consideritdone/landslide-tendermint/blob/v0.34.8/proto/tendermint/abci/types.proto#L304-L313
 
 An Event contains:
 
@@ -109,7 +109,7 @@ The main `eventCategory` you can subscribe to are:
 - `ValidatorSetUpdates`: Contains validator set updates for the block.
 
 These Events are triggered from the `state` package after a block is committed. You can get the
-full list of Event categories [on the Tendermint Godoc page](https://godoc.org/github.com/tendermint/tendermint/types#pkg-constants).
+full list of Event categories [on the Tendermint Godoc page](https://godoc.org/github.com/consideritdone/landslide-tendermint/types#pkg-constants).
 
 The `type` and `attribute` value of the `query` allow you to filter the specific Event you are looking for. For example, a `transfer` transaction triggers an Event of type `Transfer` and has `Recipient` and `Sender` as `attributes` (as defined in the [`events.go` file of the `bank` module](https://github.com/cosmos/cosmos-sdk/blob/v0.42.1/x/bank/types/events.go)). Subscribing to this Event would be done like so:
 

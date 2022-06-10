@@ -7,8 +7,8 @@ import (
 
 	minttypes "github.com/cosmos/cosmos-sdk/x/mint/types"
 
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/suite"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"

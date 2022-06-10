@@ -5,11 +5,11 @@ import (
 	"io"
 	"time"
 
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
 	"github.com/consideritdone/landslide-tendermint/libs/log"
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 	"github.com/gogo/protobuf/grpc"
 	"github.com/spf13/cobra"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmtypes "github.com/tendermint/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/client"

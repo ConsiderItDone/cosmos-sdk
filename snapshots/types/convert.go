@@ -1,8 +1,8 @@
 package types
 
 import (
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
 	proto "github.com/gogo/protobuf/proto"
-	abci "github.com/tendermint/tendermint/abci/types"
 
 	sdkerrors "github.com/cosmos/cosmos-sdk/types/errors"
 )

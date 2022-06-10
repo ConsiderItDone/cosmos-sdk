@@ -7,8 +7,8 @@ import (
 	"io"
 	"strings"
 
+	"github.com/consideritdone/landslide-tendermint/libs/cli"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/libs/cli"
 	yaml "gopkg.in/yaml.v2"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"

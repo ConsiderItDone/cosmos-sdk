@@ -5,9 +5,9 @@ import (
 	"time"
 
 	"github.com/consideritdone/landslide-tendermint/libs/log"
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
 	sdk "github.com/cosmos/cosmos-sdk/types"

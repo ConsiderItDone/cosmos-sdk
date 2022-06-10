@@ -1,9 +1,10 @@
+//go:build libsecp256k1
 // +build libsecp256k1
 
 package secp256k1
 
 import (
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/consideritdone/landslide-tendermint/crypto"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1/internal/secp256k1"
 )

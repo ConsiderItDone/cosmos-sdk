@@ -9,8 +9,8 @@ import (
 	"github.com/btcsuite/btcd/btcec"
 	"github.com/pkg/errors"
 
+	"github.com/consideritdone/landslide-tendermint/crypto"
 	secp256k1 "github.com/tendermint/btcd/btcec"
-	"github.com/tendermint/tendermint/crypto"
 
 	"github.com/cosmos/go-bip39"
 

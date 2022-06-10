@@ -5,8 +5,8 @@ import (
 	"io/ioutil"
 	"os"
 
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
 	"github.com/consideritdone/landslide-tendermint/libs/log"
-	abci "github.com/tendermint/tendermint/abci/types"
 )
 
 // SetupApp returns an application as well as a clean-up function

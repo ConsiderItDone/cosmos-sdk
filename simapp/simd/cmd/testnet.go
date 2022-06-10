@@ -10,12 +10,12 @@ import (
 	"os"
 	"path/filepath"
 
+	tmconfig "github.com/consideritdone/landslide-tendermint/config"
+	tmos "github.com/consideritdone/landslide-tendermint/libs/os"
+	tmrand "github.com/consideritdone/landslide-tendermint/libs/rand"
+	"github.com/consideritdone/landslide-tendermint/types"
+	tmtime "github.com/consideritdone/landslide-tendermint/types/time"
 	"github.com/spf13/cobra"
-	tmconfig "github.com/tendermint/tendermint/config"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

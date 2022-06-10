@@ -71,7 +71,7 @@ Cosmos SDK 使用一套称之为 [BIP32](https://github.com/bitcoin/bips/blob/ma
 +++ https://github.com/cosmos/cosmos-sdk/blob/7d7821b9af132b0f6131640195326aa02b6751db/x/auth/types/txbuilder.go#L176-L209
 
 - `CreateMnemonic(name string, language Language, passwd string, algo SigningAlgo) (info Info, seed string, err error)`创建一个新的助记符并打印在日志里，但是**并不保存在磁盘上**
-- `CreateAccount(name, mnemonic, bip39Passwd, encryptPasswd string, account uint32, index uint32) (Info, error)` 基于[`bip44 path`](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)创建一个新的账户并将其保存在磁盘上。注意私钥在[保存前用密码加密](https://github.com/cosmos/cosmos-sdk/blob/7d7821b9af132b0f6131640195326aa02b6751db/crypto/keys/mintkey/mintkey.go),**永远不会储存未加密的私钥**.在这个方法的上下文中, `account`和 `address` 参数指的是 BIP44 派生路径的段(例如`0`, `1`, `2`, ...)用于从助记符派生出私钥和公钥(注意：给相同的助记符和 `account` 将派生出相同的私钥，给相同的 `account` 和 `address` 也会派生出相同的公钥和 `Address`)。最后注意 `CreateAccount` 方法使用在 [Tendermint library](https://github.com/tendermint/tendermint/tree/bc572217c07b90ad9cee851f193aaa8e9557cbc7/crypto/secp256k1) 中的 `secp256k1` 派生出公私钥和 `Address`。总之，这个方法是用来创建用户的钥匙和地址的，并不是共识秘钥，参见[`Addresses`](#addresses) 获取更多信息
+- `CreateAccount(name, mnemonic, bip39Passwd, encryptPasswd string, account uint32, index uint32) (Info, error)` 基于[`bip44 path`](https://github.com/bitcoin/bips/blob/master/bip-0044.mediawiki)创建一个新的账户并将其保存在磁盘上。注意私钥在[保存前用密码加密](https://github.com/cosmos/cosmos-sdk/blob/7d7821b9af132b0f6131640195326aa02b6751db/crypto/keys/mintkey/mintkey.go),**永远不会储存未加密的私钥**.在这个方法的上下文中, `account`和 `address` 参数指的是 BIP44 派生路径的段(例如`0`, `1`, `2`, ...)用于从助记符派生出私钥和公钥(注意：给相同的助记符和 `account` 将派生出相同的私钥，给相同的 `account` 和 `address` 也会派生出相同的公钥和 `Address`)。最后注意 `CreateAccount` 方法使用在 [Tendermint library](https://github.com/consideritdone/landslide-tendermint/tree/bc572217c07b90ad9cee851f193aaa8e9557cbc7/crypto/secp256k1) 中的 `secp256k1` 派生出公私钥和 `Address`。总之，这个方法是用来创建用户的钥匙和地址的，并不是共识秘钥，参见[`Addresses`](#addresses) 获取更多信息
 
 `dbKeybase` 的实现是最基本的，并没有根据需求提供锁定功能。锁定功能指如果一个`dbKeybase`实例被创建，底层的`db`就被锁定意味着除了实例化它的程序其他程序无法访问它。这就是 SDK 程序使用另外一套 `Keybase` 接口的实现 `lazyKeybase` 的原因
 
@@ -97,9 +97,9 @@ Cosmos SDK 使用一套称之为 [BIP32](https://github.com/bitcoin/bips/blob/ma
 
 在 Cosmos SDK 里面 `PubKey` 遵循在 tendermint 的 `crypto` 包中定义的 `Pubkey` 接口
 
-+++ https://github.com/tendermint/tendermint/blob/bc572217c07b90ad9cee851f193aaa8e9557cbc7/crypto/crypto.go#L22-L27
++++ https://github.com/consideritdone/landslide-tendermint/blob/bc572217c07b90ad9cee851f193aaa8e9557cbc7/crypto/crypto.go#L22-L27
 
-对于 `secp256k1` 类型的秘钥，具体的实现可以在[这里](https://github.com/tendermint/tendermint/blob/bc572217c07b90ad9cee851f193aaa8e9557cbc7/crypto/secp256k1/secp256k1.go#L140)找到。对于`ed25519`类型的密钥，具体实现可以在[这里](https://github.com/tendermint/tendermint/blob/bc572217c07b90ad9cee851f193aaa8e9557cbc7/crypto/ed25519/ed25519.go#L135)找到。
+对于 `secp256k1` 类型的秘钥，具体的实现可以在[这里](https://github.com/consideritdone/landslide-tendermint/blob/bc572217c07b90ad9cee851f193aaa8e9557cbc7/crypto/secp256k1/secp256k1.go#L140)找到。对于`ed25519`类型的密钥，具体实现可以在[这里](https://github.com/consideritdone/landslide-tendermint/blob/bc572217c07b90ad9cee851f193aaa8e9557cbc7/crypto/ed25519/ed25519.go#L135)找到。
 
 请注意，在 Cosmos SDK 中，`Pubkeys` 并非以其原始格式进行操作。它使用 [`Amino`](../core/encoding.md#amino) 和 [`bech32`](https://en.bitcoin.it/wiki/Bech32) 进行 2 次编码。在 SDK 里面，`Pubkeys` 首先调用 `Bytes()` 方法在原始的 `Pubkey` 中(这里面提供 amino 编码)，然后使用 `bech32` 的 `ConvertAndEncode` 方法
 

@@ -5,8 +5,8 @@ import (
 	"testing"
 
 	"github.com/consideritdone/landslide-tendermint/libs/log"
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"

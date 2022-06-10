@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"io"
 
+	"github.com/consideritdone/landslide-tendermint/crypto"
+	"github.com/consideritdone/landslide-tendermint/crypto/tmhash"
 	"github.com/hdevalence/ed25519consensus"
-	"github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/tmhash"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"

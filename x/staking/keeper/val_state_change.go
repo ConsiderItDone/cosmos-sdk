@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"sort"
 
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
 	gogotypes "github.com/gogo/protobuf/types"
-	abci "github.com/tendermint/tendermint/abci/types"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 	"github.com/cosmos/cosmos-sdk/x/staking/types"

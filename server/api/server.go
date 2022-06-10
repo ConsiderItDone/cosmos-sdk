@@ -8,11 +8,11 @@ import (
 	"time"
 
 	"github.com/consideritdone/landslide-tendermint/libs/log"
+	tmrpcserver "github.com/consideritdone/landslide-tendermint/rpc/jsonrpc/server"
 	"github.com/gogo/gateway"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 	"github.com/grpc-ecosystem/grpc-gateway/runtime"
-	tmrpcserver "github.com/tendermint/tendermint/rpc/jsonrpc/server"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/server/config"

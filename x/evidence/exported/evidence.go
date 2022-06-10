@@ -1,8 +1,8 @@
 package exported
 
 import (
+	tmbytes "github.com/consideritdone/landslide-tendermint/libs/bytes"
 	"github.com/gogo/protobuf/proto"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"
 )

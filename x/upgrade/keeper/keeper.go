@@ -11,7 +11,7 @@ import (
 	"sort"
 
 	"github.com/consideritdone/landslide-tendermint/libs/log"
-	tmos "github.com/tendermint/tendermint/libs/os"
+	tmos "github.com/consideritdone/landslide-tendermint/libs/os"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/store/prefix"

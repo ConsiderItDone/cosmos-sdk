@@ -5,8 +5,8 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/tendermint/tendermint/mempool"
-	tmtypes "github.com/tendermint/tendermint/types"
+	"github.com/consideritdone/landslide-tendermint/mempool"
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 	"google.golang.org/grpc/codes"
 	"google.golang.org/grpc/status"
 

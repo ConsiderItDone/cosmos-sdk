@@ -4,10 +4,10 @@ import (
 	"os"
 	"testing"
 
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
 	"github.com/consideritdone/landslide-tendermint/libs/log"
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"

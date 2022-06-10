@@ -5,10 +5,10 @@ import (
 	"regexp"
 	"testing"
 
+	"github.com/consideritdone/landslide-tendermint/rpc/client/mock"
+	ctypes "github.com/consideritdone/landslide-tendermint/rpc/core/types"
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/rpc/client/mock"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
-	tmtypes "github.com/tendermint/tendermint/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/simapp"

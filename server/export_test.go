@@ -13,11 +13,11 @@ import (
 	"github.com/spf13/cobra"
 	"github.com/stretchr/testify/require"
 
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
+	tmjson "github.com/consideritdone/landslide-tendermint/libs/json"
 	"github.com/consideritdone/landslide-tendermint/libs/log"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmjson "github.com/tendermint/tendermint/libs/json"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/client"

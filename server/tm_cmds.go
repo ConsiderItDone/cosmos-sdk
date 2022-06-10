@@ -5,11 +5,11 @@ package server
 import (
 	"fmt"
 
+	tcmd "github.com/consideritdone/landslide-tendermint/cmd/tendermint/commands"
+	"github.com/consideritdone/landslide-tendermint/p2p"
+	pvm "github.com/consideritdone/landslide-tendermint/privval"
+	tversion "github.com/consideritdone/landslide-tendermint/version"
 	"github.com/spf13/cobra"
-	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
-	"github.com/tendermint/tendermint/p2p"
-	pvm "github.com/tendermint/tendermint/privval"
-	tversion "github.com/tendermint/tendermint/version"
 	yaml "gopkg.in/yaml.v2"
 
 	"github.com/cosmos/cosmos-sdk/client"

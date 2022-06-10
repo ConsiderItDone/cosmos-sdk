@@ -1,7 +1,7 @@
 package simapp
 
 import (
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/server/types"

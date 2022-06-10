@@ -1,8 +1,8 @@
 package secp256r1
 
 import (
+	tmcrypto "github.com/consideritdone/landslide-tendermint/crypto"
 	"github.com/gogo/protobuf/proto"
-	tmcrypto "github.com/tendermint/tendermint/crypto"
 
 	ecdsa "github.com/cosmos/cosmos-sdk/crypto/keys/internal/ecdsa"
 	cryptotypes "github.com/cosmos/cosmos-sdk/crypto/types"

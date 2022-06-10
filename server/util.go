@@ -14,13 +14,13 @@ import (
 	"syscall"
 	"time"
 
+	tmcfg "github.com/consideritdone/landslide-tendermint/config"
 	tmlog "github.com/consideritdone/landslide-tendermint/libs/log"
 	"github.com/rs/zerolog"
 	"github.com/rs/zerolog/log"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
 	"github.com/spf13/viper"
-	tmcfg "github.com/tendermint/tendermint/config"
 	dbm "github.com/tendermint/tm-db"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"

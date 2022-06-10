@@ -1,8 +1,8 @@
 package types
 
 import (
+	tmcrypto "github.com/consideritdone/landslide-tendermint/crypto"
 	proto "github.com/gogo/protobuf/proto"
-	tmcrypto "github.com/tendermint/tendermint/crypto"
 )
 
 // PubKey defines a public key and extends proto.Message.

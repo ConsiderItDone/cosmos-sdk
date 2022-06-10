@@ -7,9 +7,9 @@ import (
 	"strconv"
 	"strings"
 
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 	"github.com/gorilla/mux"
 	"github.com/spf13/cobra"
-	tmtypes "github.com/tendermint/tendermint/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

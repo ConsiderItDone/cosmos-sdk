@@ -129,7 +129,7 @@ Ref: https://keepachangelog.com/en/1.0.0/
 * [\#10327](https://github.com/cosmos/cosmos-sdk/pull/10327) Add null guard for possible nil `Amount` in tx fee `Coins`
 * [\#10339](https://github.com/cosmos/cosmos-sdk/pull/10339) Improve performance of `removeZeroCoins` by only allocating memory when necessary
 * [\#10045](https://github.com/cosmos/cosmos-sdk/pull/10045) Revert [#8549](https://github.com/cosmos/cosmos-sdk/pull/8549). Do not route grpc queries through Tendermint.
-* (deps) [\#10375](https://github.com/cosmos/cosmos-sdk/pull/10375) Bump Tendermint to [v0.34.14](https://github.com/tendermint/tendermint/releases/tag/v0.34.14).
+* (deps) [\#10375](https://github.com/cosmos/cosmos-sdk/pull/10375) Bump Tendermint to [v0.34.14](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.34.14).
 * [\#10024](https://github.com/cosmos/cosmos-sdk/pull/10024) `store/cachekv` performance improvement by reduced growth factor for iterator ranging by using binary searches to find dirty items when unsorted key count >= 1024.
 
 ### Bug Fixes
@@ -169,7 +169,7 @@ Security Release. No breaking changes related to 0.44.x.
 
 ### Improvements
 
-* (deps) [\#9956](https://github.com/cosmos/cosmos-sdk/pull/9956) Bump Tendermint to [v0.34.12](https://github.com/tendermint/tendermint/releases/tag/v0.34.12).
+* (deps) [\#9956](https://github.com/cosmos/cosmos-sdk/pull/9956) Bump Tendermint to [v0.34.12](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.34.12).
 
 ### Deprecated
 
@@ -518,7 +518,7 @@ he Cosmos Hub) should not use this release or any release in the v0.41.x series.
 ### Improvements
 
 * (x/bank) [\#8302](https://github.com/cosmos/cosmos-sdk/issues/8302) Add gRPC and CLI queries for client denomination metadata.
-* (tendermint) Bump Tendermint version to [v0.34.3](https://github.com/tendermint/tendermint/releases/tag/v0.34.3).
+* (tendermint) Bump Tendermint version to [v0.34.3](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.34.3).
 
 ### Bug Fixes
 
@@ -969,7 +969,7 @@ respectively, and the latter defines the height interval in which versions are d
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.33.6](https://github.com/tendermint/tendermint/releases/tag/v0.33.6).
+* (tendermint) Bump Tendermint version to [v0.33.6](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.33.6).
 
 ## [v0.38.4] - 2020-05-21
 
@@ -981,7 +981,7 @@ respectively, and the latter defines the height interval in which versions are d
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.33.3](https://github.com/tendermint/tendermint/releases/tag/v0.33.3).
+* (tendermint) Bump Tendermint version to [v0.33.3](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.33.3).
 
 ## [v0.38.2] - 2020-03-25
 
@@ -1255,21 +1255,21 @@ to detail this new feature and how state transitions occur.
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.32.13](https://github.com/tendermint/tendermint/releases/tag/v0.32.13).
+* (tendermint) Bump Tendermint version to [v0.32.13](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.32.13).
 
 
 ## [v0.37.13] - 2020-06-03
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.32.12](https://github.com/tendermint/tendermint/releases/tag/v0.32.12).
+* (tendermint) Bump Tendermint version to [v0.32.12](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.32.12).
 * (cosmos-ledger-go) Bump Cosmos Ledger Wallet library version to [v0.11.1](https://github.com/cosmos/ledger-cosmos-go/releases/tag/v0.11.1).
 
 ## [v0.37.12] - 2020-05-05
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.32.11](https://github.com/tendermint/tendermint/releases/tag/v0.32.11).
+* (tendermint) Bump Tendermint version to [v0.32.11](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.32.11).
 
 ## [v0.37.11] - 2020-04-22
 
@@ -1287,7 +1287,7 @@ to detail this new feature and how state transitions occur.
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.32.10](https://github.com/tendermint/tendermint/releases/tag/v0.32.10).
+* (tendermint) Bump Tendermint version to [v0.32.10](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.32.10).
 
 ## [v0.37.8] - 2020-03-11
 
@@ -1321,7 +1321,7 @@ respectively.
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.32.9](https://github.com/tendermint/tendermint/releases/tag/v0.32.9)
+* (tendermint) Bump Tendermint version to [v0.32.9](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.32.9)
 
 ## [v0.37.5] - 2020-01-07
 
@@ -1332,7 +1332,7 @@ respectively.
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.32.8](https://github.com/tendermint/tendermint/releases/tag/v0.32.8)
+* (tendermint) Bump Tendermint version to [v0.32.8](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.32.8)
 * (cli) [\#5482](https://github.com/cosmos/cosmos-sdk/pull/5482) Remove old "tags" nomenclature from the `q txs` command in
   favor of the new events system. Functionality remains unchanged except that `=` is used instead of `:` to be
   consistent with the API's use of event queries.
@@ -1349,7 +1349,7 @@ respectively.
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.32.7](https://github.com/tendermint/tendermint/releases/tag/v0.32.7)
+* (tendermint) Bump Tendermint version to [v0.32.7](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.32.7)
 * (ledger) [\#4716](https://github.com/cosmos/cosmos-sdk/pull/4716) Fix ledger custom coin type support bug.
 
 ### Bug Fixes
@@ -1365,7 +1365,7 @@ v0.36/v0.37 not converting validator consensus pubkey to bech32 format.
 
 ### Improvements
 
-* (tendermint) Bump Tendermint version to [v0.32.6](https://github.com/tendermint/tendermint/releases/tag/v0.32.6)
+* (tendermint) Bump Tendermint version to [v0.32.6](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.32.6)
 
 ## [v0.37.1] - 2019-09-19
 
@@ -1655,13 +1655,13 @@ genesis.
 
 ### Bug Fixes
 
-* Bump Tendermint version to [v0.31.11](https://github.com/tendermint/tendermint/releases/tag/v0.31.11) to address the vulnerability found in the `consensus` package.
+* Bump Tendermint version to [v0.31.11](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.31.11) to address the vulnerability found in the `consensus` package.
 
 ## 0.34.9
 
 ### Bug Fixes
 
-* Bump Tendermint version to [v0.31.10](https://github.com/tendermint/tendermint/releases/tag/v0.31.10) to address p2p panic errors.
+* Bump Tendermint version to [v0.31.10](https://github.com/consideritdone/landslide-tendermint/releases/tag/v0.31.10) to address p2p panic errors.
 
 ## 0.34.8
 
@@ -2572,7 +2572,7 @@ BUG FIXES
   * [\#2884](https://github.com/cosmos/cosmos-sdk/issues/2884) [docs/examples] Fix `basecli version` panic
 
 * Tendermint
-  * [\#2797](https://github.com/tendermint/tendermint/pull/2797) AddressBook requires addresses to have IDs; Do not crap out immediately after sending pex addrs in seed mode
+  * [\#2797](https://github.com/consideritdone/landslide-tendermint/pull/2797) AddressBook requires addresses to have IDs; Do not crap out immediately after sending pex addrs in seed mode
 
 ## 0.26.0
 
@@ -2753,7 +2753,7 @@ BREAKING CHANGES
     * BFT time is implemented
     * Secp256k1 signature format has changed
     * There is now a threshold multisig format
-    * See the [tendermint changelog](https://github.com/tendermint/tendermint/blob/master/CHANGELOG.md) for other changes.
+    * See the [tendermint changelog](https://github.com/consideritdone/landslide-tendermint/blob/master/CHANGELOG.md) for other changes.
 
 FEATURES
 
@@ -2823,9 +2823,9 @@ IMPROVEMENTS
 
 * Gaia
     * [x/stake] [#2023](https://github.com/cosmos/cosmos-sdk/pull/2023) Terminate iteration loop in `UpdateBondedValidators` and `UpdateBondedValidatorsFull` when the first revoked validator is encountered and perform a sanity check.
-    * [x/auth] Signature verification's gas cost now accounts for pubkey type. [#2046](https://github.com/tendermint/tendermint/pull/2046)
+    * [x/auth] Signature verification's gas cost now accounts for pubkey type. [#2046](https://github.com/consideritdone/landslide-tendermint/pull/2046)
     * [x/stake] [x/slashing] Ensure delegation invariants to jailed validators [#1883](https://github.com/cosmos/cosmos-sdk/issues/1883).
-    * [x/stake] Improve speed of GetValidator, which was shown to be a performance bottleneck. [#2046](https://github.com/tendermint/tendermint/pull/2200)
+    * [x/stake] Improve speed of GetValidator, which was shown to be a performance bottleneck. [#2046](https://github.com/consideritdone/landslide-tendermint/pull/2200)
     * [x/stake] [\#2435](https://github.com/cosmos/cosmos-sdk/issues/2435) Improve memory efficiency of getting the various store keys
     * [genesis] [\#2229](https://github.com/cosmos/cosmos-sdk/issues/2229) Ensure that there are no duplicate accounts or validators in the genesis state.
     * [genesis] [\#2450](https://github.com/cosmos/cosmos-sdk/issues/2450) Validate staking genesis parameters.
@@ -2937,10 +2937,10 @@ BREAKING CHANGES
         structure `TxContext` in `x/auth/client/context`
 
 * Tendermint
-    - v0.22.5 -> See [Tendermint PR](https://github.com/tendermint/tendermint/pull/1966)
+    - v0.22.5 -> See [Tendermint PR](https://github.com/consideritdone/landslide-tendermint/pull/1966)
         - change all the cryptography imports.
     - v0.23.0 -> See
-      [Changelog](https://github.com/tendermint/tendermint/blob/v0.23.0/CHANGELOG.md#0230)
+      [Changelog](https://github.com/consideritdone/landslide-tendermint/blob/v0.23.0/CHANGELOG.md#0230)
       and [SDK PR](https://github.com/cosmos/cosmos-sdk/pull/1927)
         - BeginBlock no longer includes crypto.Pubkey
         - use time.Time instead of int64 for time.
@@ -3458,7 +3458,7 @@ NOTE: v0.15.0 is a large breaking change that updates the encoding scheme to use
 [Amino](github.com/tendermint/go-amino).
 
 For details on how this changes encoding for public keys and addresses,
-see the [docs](https://github.com/tendermint/tendermint/blob/v0.19.1/docs/specification/new-spec/encoding.md#public-key-cryptography).
+see the [docs](https://github.com/consideritdone/landslide-tendermint/blob/v0.19.1/docs/specification/new-spec/encoding.md#public-key-cryptography).
 
 BREAKING CHANGES
 
