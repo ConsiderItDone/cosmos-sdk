@@ -4,6 +4,8 @@ package server
 
 import (
 	"fmt"
+	"github.com/ava-labs/avalanchego/snow/engine/common"
+	"github.com/consideritdone/landslide-tendermint/store"
 	"net/http"
 	"os"
 	"runtime/pprof"
@@ -260,13 +262,21 @@ func startInProcess(ctx *Context, clientCtx client.Context, appCreator types.App
 	}
 
 	genDocProvider := node.DefaultGenesisDocProviderFunc(cfg)
+	msgChan := make(chan common.Message, 1)
+	blockStoreDB, err := node.DefaultDBProvider(&node.DBContext{"blockstore", cfg})
+	if err != nil {
+		return err
+	}
+	tmBlockStore := store.NewBlockStore(blockStoreDB)
 	tmNode, err := node.NewNode(
 		cfg,
 		pvm.LoadOrGenFilePV(cfg.PrivValidatorKeyFile(), cfg.PrivValidatorStateFile()),
 		nodeKey,
+		msgChan,
 		proxy.NewLocalClientCreator(app),
 		genDocProvider,
 		node.DefaultDBProvider,
+		tmBlockStore,
 		node.DefaultMetricsProvider(cfg.Instrumentation),
 		ctx.Logger,
 	)
