@@ -126,7 +126,7 @@ func InterceptConfigsPreRunHandler(cmd *cobra.Command, customAppConfigTemplate s
 	serverCtx.Viper.AutomaticEnv()
 
 	// intercept configuration files, using both Viper instances separately
-	config, err := interceptConfigs(serverCtx.Viper, customAppConfigTemplate, customAppConfig)
+	config, err := InterceptConfigs(serverCtx.Viper, customAppConfigTemplate, customAppConfig)
 	if err != nil {
 		return err
 	}
@@ -179,12 +179,12 @@ func SetCmdServerContext(cmd *cobra.Command, serverCtx *Context) error {
 	return nil
 }
 
-// interceptConfigs parses and updates a Tendermint configuration file or
+// InterceptConfigs parses and updates a Tendermint configuration file or
 // creates a new one and saves it. It also parses and saves the application
 // configuration file. The Tendermint configuration file is parsed given a root
 // Viper object, whereas the application is parsed with the private package-aware
 // viperCfg object.
-func interceptConfigs(rootViper *viper.Viper, customAppTemplate string, customConfig interface{}) (*tmcfg.Config, error) {
+func InterceptConfigs(rootViper *viper.Viper, customAppTemplate string, customConfig interface{}) (*tmcfg.Config, error) {
 	rootDir := rootViper.GetString(flags.FlagHome)
 	configPath := filepath.Join(rootDir, "config")
 	tmCfgFile := filepath.Join(configPath, "config.toml")
