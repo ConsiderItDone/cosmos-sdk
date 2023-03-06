@@ -4,10 +4,10 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/consideritdone/landslide-tendermint/libs/cli"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
 	"github.com/spf13/pflag"
-	"github.com/tendermint/tendermint/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/crypto/keyring"

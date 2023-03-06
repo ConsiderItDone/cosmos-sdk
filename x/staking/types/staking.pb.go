@@ -16,7 +16,7 @@ import (
 	github_com_gogo_protobuf_protoc_gen_gogo_descriptor "github.com/gogo/protobuf/protoc-gen-gogo/descriptor"
 	github_com_gogo_protobuf_types "github.com/gogo/protobuf/types"
 	_ "github.com/regen-network/cosmos-proto"
-	types "github.com/tendermint/tendermint/proto/tendermint/types"
+	types "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
 	_ "google.golang.org/protobuf/types/known/durationpb"
 	_ "google.golang.org/protobuf/types/known/timestamppb"
 	io "io"

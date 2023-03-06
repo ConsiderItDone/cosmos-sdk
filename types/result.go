@@ -7,8 +7,8 @@ import (
 	"strings"
 
 	"github.com/gogo/protobuf/proto"
-	abci "github.com/tendermint/tendermint/abci/types"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
+	ctypes "github.com/consideritdone/landslide-tendermint/rpc/core/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"
@@ -252,7 +252,7 @@ func WrapServiceResult(ctx Context, res proto.Message, err error) (*Result, erro
 	}
 
 	return &Result{
-		Data:   data,
+		Data: data,
 		Events: events,
 	}, nil
 }

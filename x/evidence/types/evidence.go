@@ -4,9 +4,9 @@ import (
 	"fmt"
 	"time"
 
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/crypto/tmhash"
-	tmbytes "github.com/tendermint/tendermint/libs/bytes"
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
+	"github.com/consideritdone/landslide-tendermint/crypto/tmhash"
+	tmbytes "github.com/consideritdone/landslide-tendermint/libs/bytes"
 	"gopkg.in/yaml.v2"
 
 	sdk "github.com/cosmos/cosmos-sdk/types"

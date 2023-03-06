@@ -9,15 +9,17 @@ import (
 	"runtime/pprof"
 	"time"
 
+	"github.com/ava-labs/avalanchego/snow/engine/common"
+	"github.com/consideritdone/landslide-tendermint/abci/server"
+	tcmd "github.com/consideritdone/landslide-tendermint/cmd/tendermint/commands"
+	tmos "github.com/consideritdone/landslide-tendermint/libs/os"
+	"github.com/consideritdone/landslide-tendermint/node"
+	"github.com/consideritdone/landslide-tendermint/p2p"
+	pvm "github.com/consideritdone/landslide-tendermint/privval"
+	"github.com/consideritdone/landslide-tendermint/proxy"
+	"github.com/consideritdone/landslide-tendermint/rpc/client/local"
+	"github.com/consideritdone/landslide-tendermint/store"
 	"github.com/spf13/cobra"
-	"github.com/tendermint/tendermint/abci/server"
-	tcmd "github.com/tendermint/tendermint/cmd/tendermint/commands"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	"github.com/tendermint/tendermint/node"
-	"github.com/tendermint/tendermint/p2p"
-	pvm "github.com/tendermint/tendermint/privval"
-	"github.com/tendermint/tendermint/proxy"
-	"github.com/tendermint/tendermint/rpc/client/local"
 	"google.golang.org/grpc"
 
 	"github.com/cosmos/cosmos-sdk/client"
@@ -257,6 +259,12 @@ func startInProcess(ctx *Context, clientCtx client.Context, appCreator types.App
 	}
 
 	genDocProvider := node.DefaultGenesisDocProviderFunc(cfg)
+	msgChan := make(chan common.Message, 1)
+	blockStoreDB, err := node.DefaultDBProvider(&node.DBContext{"blockstore", cfg})
+	if err != nil {
+		return err
+	}
+	tmBlockStore := store.NewBlockStore(blockStoreDB)
 
 	var (
 		tmNode   *node.Node
@@ -273,9 +281,11 @@ func startInProcess(ctx *Context, clientCtx client.Context, appCreator types.App
 			cfg,
 			pvm.LoadOrGenFilePV(cfg.PrivValidatorKeyFile(), cfg.PrivValidatorStateFile()),
 			nodeKey,
+			msgChan,
 			proxy.NewLocalClientCreator(app),
 			genDocProvider,
 			node.DefaultDBProvider,
+			tmBlockStore,
 			node.DefaultMetricsProvider(cfg.Instrumentation),
 			ctx.Logger,
 		)

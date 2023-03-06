@@ -16,12 +16,12 @@ import (
 	"time"
 
 	"github.com/stretchr/testify/require"
-	tmcfg "github.com/tendermint/tendermint/config"
-	tmflags "github.com/tendermint/tendermint/libs/cli/flags"
-	"github.com/tendermint/tendermint/libs/log"
-	tmrand "github.com/tendermint/tendermint/libs/rand"
-	"github.com/tendermint/tendermint/node"
-	tmclient "github.com/tendermint/tendermint/rpc/client"
+	tmcfg "github.com/consideritdone/landslide-tendermint/config"
+	tmflags "github.com/consideritdone/landslide-tendermint/libs/cli/flags"
+	"github.com/consideritdone/landslide-tendermint/libs/log"
+	tmrand "github.com/consideritdone/landslide-tendermint/libs/rand"
+	"github.com/consideritdone/landslide-tendermint/node"
+	tmclient "github.com/consideritdone/landslide-tendermint/rpc/client"
 	dbm "github.com/tendermint/tm-db"
 	"google.golang.org/grpc"
 

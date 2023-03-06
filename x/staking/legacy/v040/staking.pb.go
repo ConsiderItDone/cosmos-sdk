@@ -26,7 +26,7 @@ import (
 	_ "github.com/golang/protobuf/ptypes/duration"
 	_ "github.com/golang/protobuf/ptypes/timestamp"
 	_ "github.com/regen-network/cosmos-proto"
-	types "github.com/tendermint/tendermint/proto/tendermint/types"
+	types "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
 )
 
 // Reference imports to suppress errors if they are not otherwise used.

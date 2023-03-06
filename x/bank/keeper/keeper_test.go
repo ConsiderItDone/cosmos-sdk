@@ -5,10 +5,10 @@ import (
 	"testing"
 	"time"
 
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
+	tmtime "github.com/consideritdone/landslide-tendermint/types/time"
 	"github.com/stretchr/testify/suite"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtime "github.com/tendermint/tendermint/types/time"
 
 	"github.com/cosmos/cosmos-sdk/baseapp"
 	"github.com/cosmos/cosmos-sdk/simapp"

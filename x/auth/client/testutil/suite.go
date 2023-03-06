@@ -10,9 +10,9 @@ import (
 	"strings"
 	"testing"
 
+	tmcli "github.com/consideritdone/landslide-tendermint/libs/cli"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	tmcli "github.com/tendermint/tendermint/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

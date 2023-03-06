@@ -10,9 +10,9 @@ import (
 
 	"gopkg.in/yaml.v2"
 
+	rpcclient "github.com/consideritdone/landslide-tendermint/rpc/client"
 	"github.com/gogo/protobuf/proto"
 	"github.com/pkg/errors"
-	rpcclient "github.com/tendermint/tendermint/rpc/client"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	codectypes "github.com/cosmos/cosmos-sdk/codec/types"

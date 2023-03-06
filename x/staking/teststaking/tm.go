@@ -1,8 +1,8 @@
 package teststaking
 
 import (
-	tmcrypto "github.com/tendermint/tendermint/crypto"
-	tmtypes "github.com/tendermint/tendermint/types"
+	tmcrypto "github.com/consideritdone/landslide-tendermint/crypto"
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 
 	cryptocodec "github.com/cosmos/cosmos-sdk/crypto/codec"
 	sdk "github.com/cosmos/cosmos-sdk/types"

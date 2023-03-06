@@ -1,3 +1,4 @@
+//go:build norace
 // +build norace
 
 package client_test
@@ -5,7 +6,7 @@ package client_test
 import (
 	"fmt"
 
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
 
 	banktypes "github.com/cosmos/cosmos-sdk/x/bank/types"
 )

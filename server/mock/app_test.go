@@ -4,9 +4,9 @@ import (
 	"testing"
 
 	"github.com/stretchr/testify/require"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	"github.com/tendermint/tendermint/types"
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
+	"github.com/consideritdone/landslide-tendermint/types"
 )
 
 // TestInitApp makes sure we can initialize this thing without an error

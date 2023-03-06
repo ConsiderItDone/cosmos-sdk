@@ -8,10 +8,10 @@ import (
 
 	auth "github.com/cosmos/cosmos-sdk/x/auth/types"
 
-	"github.com/tendermint/tendermint/crypto"
+	"github.com/consideritdone/landslide-tendermint/crypto"
 
 	"github.com/btcsuite/btcd/btcec"
-	tmcoretypes "github.com/tendermint/tendermint/rpc/core/types"
+	tmcoretypes "github.com/consideritdone/landslide-tendermint/rpc/core/types"
 
 	crgtypes "github.com/cosmos/cosmos-sdk/server/rosetta/lib/types"
 
@@ -19,8 +19,8 @@ import (
 	"github.com/cosmos/cosmos-sdk/types/tx/signing"
 
 	rosettatypes "github.com/coinbase/rosetta-sdk-go/types"
-	abci "github.com/tendermint/tendermint/abci/types"
-	tmtypes "github.com/tendermint/tendermint/types"
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 
 	crgerrs "github.com/cosmos/cosmos-sdk/server/rosetta/lib/errors"
 

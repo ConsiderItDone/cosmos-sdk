@@ -3,8 +3,8 @@ package tmservice
 import (
 	"context"
 
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
+	ctypes "github.com/consideritdone/landslide-tendermint/rpc/core/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 )

@@ -7,9 +7,9 @@ import (
 	"sort"
 	"strings"
 
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
 	"github.com/gogo/protobuf/jsonpb"
 	proto "github.com/gogo/protobuf/proto"
-	abci "github.com/tendermint/tendermint/abci/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 )

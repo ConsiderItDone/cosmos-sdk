@@ -7,10 +7,10 @@ import (
 	"io/ioutil"
 	"os"
 
+	tmjson "github.com/consideritdone/landslide-tendermint/libs/json"
+	tmproto "github.com/consideritdone/landslide-tendermint/proto/tendermint/types"
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 	"github.com/spf13/cobra"
-	tmjson "github.com/tendermint/tendermint/libs/json"
-	tmproto "github.com/tendermint/tendermint/proto/tendermint/types"
-	tmtypes "github.com/tendermint/tendermint/types"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	"github.com/cosmos/cosmos-sdk/server/types"

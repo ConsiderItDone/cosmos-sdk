@@ -1,4 +1,5 @@
-//+build ledger test_ledger_mock
+//go:build ledger || test_ledger_mock
+// +build ledger test_ledger_mock
 
 package keys
 
@@ -9,8 +10,8 @@ import (
 	"io/ioutil"
 	"testing"
 
+	"github.com/consideritdone/landslide-tendermint/libs/cli"
 	"github.com/stretchr/testify/require"
-	"github.com/tendermint/tendermint/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

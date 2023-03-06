@@ -3,9 +3,9 @@ package testutil
 import (
 	"fmt"
 
+	tmcli "github.com/consideritdone/landslide-tendermint/libs/cli"
 	"github.com/gogo/protobuf/proto"
 	"github.com/stretchr/testify/suite"
-	tmcli "github.com/tendermint/tendermint/libs/cli"
 
 	"github.com/cosmos/cosmos-sdk/client/flags"
 	clitestutil "github.com/cosmos/cosmos-sdk/testutil/cli"

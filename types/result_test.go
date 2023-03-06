@@ -6,12 +6,12 @@ import (
 	"strings"
 	"testing"
 
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
+	"github.com/consideritdone/landslide-tendermint/libs/bytes"
+	ctypes "github.com/consideritdone/landslide-tendermint/rpc/core/types"
 	"github.com/golang/protobuf/proto"
 	"github.com/stretchr/testify/require"
 	"github.com/stretchr/testify/suite"
-	abci "github.com/tendermint/tendermint/abci/types"
-	"github.com/tendermint/tendermint/libs/bytes"
-	ctypes "github.com/tendermint/tendermint/rpc/core/types"
 
 	"github.com/cosmos/cosmos-sdk/codec"
 	"github.com/cosmos/cosmos-sdk/testutil/testdata"

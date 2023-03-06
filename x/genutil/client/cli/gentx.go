@@ -10,10 +10,10 @@ import (
 	"os"
 	"path/filepath"
 
+	tmos "github.com/consideritdone/landslide-tendermint/libs/os"
+	tmtypes "github.com/consideritdone/landslide-tendermint/types"
 	"github.com/pkg/errors"
 	"github.com/spf13/cobra"
-	tmos "github.com/tendermint/tendermint/libs/os"
-	tmtypes "github.com/tendermint/tendermint/types"
 
 	"github.com/cosmos/cosmos-sdk/client"
 	"github.com/cosmos/cosmos-sdk/client/flags"

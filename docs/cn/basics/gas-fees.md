@@ -46,7 +46,7 @@ ctx.GasMeter().ConsumeGas(amount, "description")
 
 `ctx.BlockGasMeter()` 是跟踪每个区块 `gas` 消耗并保证它没有超过限制的 `GasMeter`。每当 [`BeginBlock`](../core/baseapp.md#beginblock) 被调用的时候一个新的 `BlockGasMeter` 实例将会被创建。`BlockGasMeter` 的 `gas` 是有限的，每个块的 `gas` 限制应该在应用程序的共识参数中定义，Cosmos SDK 应用程序使用 Tendermint 提供的默认共识参数：
 
-+++ https://github.com/tendermint/tendermint/blob/f323c80cb3b78e123ea6238c8e136a30ff749ccc/types/params.go#L65-L72
++++ https://github.com/consideritdone/landslide-tendermint/blob/f323c80cb3b78e123ea6238c8e136a30ff749ccc/types/params.go#L65-L72
 
 当通过 `DeliverTx` 处理新的 [transaction](../core/transactions.md) 的时候，`BlockGasMeter` 的当前值会被校验是否超过上限，如果超过上限，`DeliverTx` 直接返回，由于 `BeginBlock` 会消耗 `gas`，这种情况可能会在第一个 `transaction` 到来时发生，如果没有发生这种情况，`transaction`将会被正常的执行。在 `DeliverTx` 的最后，`ctx.BlockGasMeter()` 会追踪 `gas` 消耗并将它增加到处理 `transaction` 的 `gas` 消耗中.
 

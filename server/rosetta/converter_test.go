@@ -5,7 +5,7 @@ import (
 	"encoding/json"
 	"testing"
 
-	abci "github.com/tendermint/tendermint/abci/types"
+	abci "github.com/consideritdone/landslide-tendermint/abci/types"
 
 	authsigning "github.com/cosmos/cosmos-sdk/x/auth/signing"
 

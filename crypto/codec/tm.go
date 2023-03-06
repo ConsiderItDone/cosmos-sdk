@@ -1,9 +1,9 @@
 package codec
 
 import (
-	tmcrypto "github.com/tendermint/tendermint/crypto"
-	"github.com/tendermint/tendermint/crypto/encoding"
-	tmprotocrypto "github.com/tendermint/tendermint/proto/tendermint/crypto"
+	tmcrypto "github.com/consideritdone/landslide-tendermint/crypto"
+	"github.com/consideritdone/landslide-tendermint/crypto/encoding"
+	tmprotocrypto "github.com/consideritdone/landslide-tendermint/proto/tendermint/crypto"
 
 	"github.com/cosmos/cosmos-sdk/crypto/keys/ed25519"
 	"github.com/cosmos/cosmos-sdk/crypto/keys/secp256k1"
